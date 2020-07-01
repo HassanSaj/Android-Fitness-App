@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Graph label -->
+    <TextView
+            android:id="@+id/time_per_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/labels"
+            android:text="@string/time_per_km"/>
+
+    <!-- Graph -->
+    <com.something.fitnessapp.Graph
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/time_per_km"
+            android:layout_marginBottom="@dimen/margin"/>
+
+    <!-- Total distance travelled -->
+    <TextView
+            android:id="@+id/total_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/graph"
+            android:layout_marginTop="@dimen/margin"
+            android:textSize="@dimen/labels"
+            android:text="@string/total_distance"/>
+
+    <!-- Average speed -->
+    <TextView
+            android:id="@+id/average_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_distance"
+            android:layout_marginTop="@dimen/margin"
+            android:textSize="@dimen/labels"
+            android:text="@string/average_speed"/>
+
+    <!-- Time elapsed -->
+    <TextView
+            android:id="@+id/elapsed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/average_speed"
+            android:layout_marginTop="@dimen/margin"
+            android:textSize="@dimen/labels"
+            android:text="@string/elapsed_time"/>
+
+</RelativeLayout>

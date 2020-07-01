@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:toolbarId="@+id/toolbar"
+        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+
+        app:titleTextColor="#ffffff"
+        app:contentScrim="?attr/colorPrimary">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            app:titleTextColor="#ffffff"
+
+            ></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:background="@drawable/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/barel_curl"
+                android:background="#ffffff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022   For this exercise you want to keep a very good form for results.
+"  android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022  Stand straight with the bar in your hands, make sure to have a grip just beside your hips."
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022 Perform 3 sets, increase the weight each set completing between 12-15 reps."
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/concentrated_curl"
+                android:background="#ffffff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022    For this exercise you will have to sit down at the edge of a seat or bench.
+"  android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022 Start with a heavy dumbell, placing your elbow (if it is the right arm your working on) on the right leg and vice versa."
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022  Curl the dumbell, squeezing it at the top."
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\u2022  Complete at least 3 heavy sets between 6-8 reps."
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

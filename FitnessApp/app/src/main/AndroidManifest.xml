@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.something.fitnessapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddNutrition05"></activity>
+        <activity android:name=".AddNutrition04" />
+        <activity android:name=".AddNutrition03" />
+        <activity android:name=".AddNutrition02" />
+        <activity android:name=".AddNutrition01" />
+        <activity android:name=".WeightAddExercise05" />
+        <activity android:name=".WeightAddExercise04" />
+        <activity android:name=".WeightAddExercise03" />
+        <activity android:name=".WeightAddExercise02" />
+        <activity android:name=".WeightAddExercise01" />
+        <activity android:name=".MuscleAddExercise05" />
+        <activity android:name=".MuscleAddExercise03" />
+        <activity android:name=".MuscleAddExercise04" />
+        <activity android:name=".MuscleAddExercise02" />
+        <activity
+            android:name=".MainView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".NotificationPublisher" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dinneroptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lunchoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Snacksoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nutritionoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nutrition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChestAndTriceps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BackAndBicep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeightLoss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MuscleBuilding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MuscleAddExercise01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shoulderandtricep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Legs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sprint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Battleropes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Burpees"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pushups"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Skipping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Situps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lunchforweightloss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lunchformuscle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dinnerformuscle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dinnerforweightloss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SnacksforWeightloss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SnacksforMuscle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Breakforweightloss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Breakfastformuscle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrackerMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GpsMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Timer_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Timer_Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".GpsServices" />
+    </application>
+
+</manifest>

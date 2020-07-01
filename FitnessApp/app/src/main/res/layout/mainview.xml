@@ -1,0 +1,146 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:titleTextColor="#ffffff"
+        app:title="Fitness App"
+        android:background="#000000"
+
+        ></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="400dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="5dp"
+            android:background="@drawable/loss"
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="weightloss"
+                >
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:id="@+id/image_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/action_settings"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lossw"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:text="Weight Loss"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="400dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="5dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="muscle">
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:id="@+id/image_open1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/action_settings"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fitness"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:text="Muscle Building"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="5dp"
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="nutrition">
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/image_open3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/action_settings"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nu"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/image_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:text="Nutrition"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
